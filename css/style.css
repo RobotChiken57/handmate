@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Open+Sans&display=swap');
+
+:root{
+    --bgColor: #EFE3DF;
+    --textColor:#2B2024;
+    --bgLink:#673D3F;
+    --bgLinkHover:#B05459;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: var(--bgColor);
+    color: var(--textColor);
+    font-size: 22px;
+}
+.container{
+    max-width: 1250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.main{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    margin-top:74px;
+}
+.main__images{
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    position: relative;
+}
+.main__images::after{
+    content: '';
+    display: block;
+    width: 352px;
+    height: 536px;
+    background-repeat: no-repeat;
+    background-image: url(../img/Rectangle0.png);
+    background-size: cover;
+    position: absolute;
+    left: 38px;
+    bottom: 35px;
+}
+.main__item{
+    flex-basis: 460px;
+}
+.main__title,
+.link{
+    font-family: 'IBM Plex Serif', serif;
+}
+.main__title{
+    font-size: 64px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 38px;
+}
+.main__text{
+    line-height:1.5;
+    margin-top: 0;
+    margin-bottom: 43px;
+}
+.link{
+    font-size: 20px;
+    text-align: center;
+    background: var(--bgLink);
+    color: var(--bgColor);
+    text-decoration: none;
+    padding: 16px 0;
+    display: block;
+    max-width: 300px;
+}
+.link:hover{
+    background: var(--bgLinkHover);
+}
